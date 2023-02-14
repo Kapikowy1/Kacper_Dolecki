@@ -1,0 +1,96 @@
+\hypertarget{class_statistics}{}\doxysection{Statistics Class Reference}
+\label{class_statistics}\index{Statistics@{Statistics}}
+
+
+Klasa służąca do obliczania całki numerycznej z podanego ciągu liczb. Klasa zawiera metodę \mbox{\hyperlink{class_statistics_a5ec1ad32fa369eb57fa95b164d5c5377}{integrate()}}, która jest odpowiedzialna za obliczenie całki numerycznej.  
+
+
+
+
+{\ttfamily \#include $<$statistics.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_statistics_a60ddd90a571ed4c3ce8c0f6317a36d63}{Statistics}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyślny klasy \mbox{\hyperlink{class_statistics}{Statistics}}. Inicjalizuje nowy obiekt klasy \mbox{\hyperlink{class_statistics}{Statistics}} bez parametrów. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_statistics_a567e404052f8f50873c2dfa8cf261251}{Statistics}} (const \mbox{\hyperlink{class_statistics}{Statistics}} \&)
+\begin{DoxyCompactList}\small\item\em Konstruktor kopiujący klasy \mbox{\hyperlink{class_statistics}{Statistics}}. Tworzy kopię obiektu klasy \mbox{\hyperlink{class_statistics}{Statistics}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_statistics_ab68ede75479e44d5c35b78ec1284065b}{$\sim$\+Statistics}} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klasy \mbox{\hyperlink{class_statistics}{Statistics}}. Usuwa obiekt klasy \mbox{\hyperlink{class_statistics}{Statistics}} i zwalnia zaalokowane zasoby. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_statistics_a5ec1ad32fa369eb57fa95b164d5c5377}{integrate}} (double a, double b, int n, \mbox{\hyperlink{class_sequence}{Sequence}} \&seq)
+\begin{DoxyCompactList}\small\item\em Funkcja obliczająca całkę numeryczną. Funkcja oblicza całkę numeryczną funkcji określonej przez wartości w sekwencji seq w przedziale \mbox{[}a,b\mbox{]}. Całka jest obliczana za pomocą metody prostokątów. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa służąca do obliczania całki numerycznej z podanego ciągu liczb. Klasa zawiera metodę \mbox{\hyperlink{class_statistics_a5ec1ad32fa369eb57fa95b164d5c5377}{integrate()}}, która jest odpowiedzialna za obliczenie całki numerycznej. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_statistics_a60ddd90a571ed4c3ce8c0f6317a36d63}\label{class_statistics_a60ddd90a571ed4c3ce8c0f6317a36d63}} 
+\index{Statistics@{Statistics}!Statistics@{Statistics}}
+\index{Statistics@{Statistics}!Statistics@{Statistics}}
+\doxysubsubsection{\texorpdfstring{Statistics()}{Statistics()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Statistics\+::\+Statistics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Konstruktor domyślny klasy \mbox{\hyperlink{class_statistics}{Statistics}}. Inicjalizuje nowy obiekt klasy \mbox{\hyperlink{class_statistics}{Statistics}} bez parametrów. 
+
+\mbox{\Hypertarget{class_statistics_a567e404052f8f50873c2dfa8cf261251}\label{class_statistics_a567e404052f8f50873c2dfa8cf261251}} 
+\index{Statistics@{Statistics}!Statistics@{Statistics}}
+\index{Statistics@{Statistics}!Statistics@{Statistics}}
+\doxysubsubsection{\texorpdfstring{Statistics()}{Statistics()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Statistics\+::\+Statistics (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_statistics}{Statistics}} \&}]{stat }\end{DoxyParamCaption})}
+
+
+
+Konstruktor kopiujący klasy \mbox{\hyperlink{class_statistics}{Statistics}}. Tworzy kopię obiektu klasy \mbox{\hyperlink{class_statistics}{Statistics}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stat} & Referencja do obiektu klasy \mbox{\hyperlink{class_statistics}{Statistics}}, który jest kopiowany. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_statistics_ab68ede75479e44d5c35b78ec1284065b}\label{class_statistics_ab68ede75479e44d5c35b78ec1284065b}} 
+\index{Statistics@{Statistics}!````~Statistics@{$\sim$Statistics}}
+\index{````~Statistics@{$\sim$Statistics}!Statistics@{Statistics}}
+\doxysubsubsection{\texorpdfstring{$\sim$Statistics()}{~Statistics()}}
+{\footnotesize\ttfamily Statistics\+::$\sim$\+Statistics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor klasy \mbox{\hyperlink{class_statistics}{Statistics}}. Usuwa obiekt klasy \mbox{\hyperlink{class_statistics}{Statistics}} i zwalnia zaalokowane zasoby. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_statistics_a5ec1ad32fa369eb57fa95b164d5c5377}\label{class_statistics_a5ec1ad32fa369eb57fa95b164d5c5377}} 
+\index{Statistics@{Statistics}!integrate@{integrate}}
+\index{integrate@{integrate}!Statistics@{Statistics}}
+\doxysubsubsection{\texorpdfstring{integrate()}{integrate()}}
+{\footnotesize\ttfamily double Statistics\+::integrate (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b,  }\item[{int}]{n,  }\item[{\mbox{\hyperlink{class_sequence}{Sequence}} \&}]{seq }\end{DoxyParamCaption})}
+
+
+
+Funkcja obliczająca całkę numeryczną. Funkcja oblicza całkę numeryczną funkcji określonej przez wartości w sekwencji seq w przedziale \mbox{[}a,b\mbox{]}. Całka jest obliczana za pomocą metody prostokątów. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Dolna granica przedziału całkowania. \\
+\hline
+{\em b} & Górna granica przedziału całkowania. \\
+\hline
+{\em n} & Liczba prostokątów, które mają być użyte do obliczenia całki. \\
+\hline
+{\em seq} & Referencja do obiektu klasy \mbox{\hyperlink{class_sequence}{Sequence}}, którego wartości definiują funkcję. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Wartość numerycznej całki funkcji. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{statistics_8h}{statistics.\+h}}\item 
+\mbox{\hyperlink{statistics_8cpp}{statistics.\+cpp}}\end{DoxyCompactItemize}

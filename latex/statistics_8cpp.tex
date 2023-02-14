@@ -1,0 +1,21 @@
+\hypertarget{statistics_8cpp}{}\doxysection{statistics.\+cpp File Reference}
+\label{statistics_8cpp}\index{statistics.cpp@{statistics.cpp}}
+
+
+Plik implementacji klasy \mbox{\hyperlink{class_statistics}{Statistics}}.  
+
+
+{\ttfamily \#include \char`\"{}statistics.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+
+
+\doxysubsection{Detailed Description}
+Plik implementacji klasy \mbox{\hyperlink{class_statistics}{Statistics}}. 
+
+Obliczanie całki funkcji f(x) w przedziale \mbox{[}a,b\mbox{]} przy użyciu metody prostokątów. Wzór użyty do obliczania całki wygląda następująco\+:  \[
+\int_{a}^{b}f(x),dx \approx h \cdot \left(\frac{f(a) + f(a + h) + f(a + 2h) + ... + f(b - h) + f(b)}{2}\right)
+\] gdzie h = $\frac{b-a}{n}$.
+
+\begin{DoxyAuthor}{Author}
+Kacper Dolecki 
+\end{DoxyAuthor}
