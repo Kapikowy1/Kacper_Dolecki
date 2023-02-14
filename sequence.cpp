@@ -6,13 +6,14 @@
 @author Kacper Dolecki
 
 @brief Plik zawierający implementację klasy Sequence
+@brief Konstruktor domyślny
 */
 /**
 
 @brief Konstruktor domyślny
 */
 Sequence::Sequence() {}
-/**
+/*!
 
 @brief Konstruktor kopiujący
 @param seq Obiekt kopiowany
@@ -20,12 +21,12 @@ Sequence::Sequence() {}
 Sequence::Sequence(const Sequence &seq) {
 values = seq.values;
 }
-/**
+/*!
 
 @brief Destruktor
 */
 Sequence::~Sequence() {}
-/**
+/*!
 
 @brief Funkcja ustawiająca wartości wektora values
 @param v Wektor wartości do ustawienia
