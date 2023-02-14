@@ -80,19 +80,25 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Plik implementacji klasy <a class="el" href="class_statistics.html" title="Klasa służąca do obliczania całki numerycznej z podanego ciągu liczb. Klasa zawiera metodę integrate(...">Statistics</a>.  
+<p>Plik implementacji klasy Statistics.Wzór użyty do obliczania całki wygląda następująco:  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="statistics_8h_source.html">statistics.h</a>&quot;</code><br />
 <code>#include &lt;cmath&gt;</code><br />
 </div><a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Plik implementacji klasy <a class="el" href="class_statistics.html" title="Klasa służąca do obliczania całki numerycznej z podanego ciągu liczb. Klasa zawiera metodę integrate(...">Statistics</a>. </p>
+<div class="textblock"><p>Plik implementacji klasy Statistics.Wzór użyty do obliczania całki wygląda następująco: </p>
 <p>Obliczanie całki funkcji f(x) w przedziale [a,b] przy użyciu metody prostokątów. Wzór użyty do obliczania całki wygląda następująco:  </p><p class="formulaDsp">
 \[
 \int_{a}^{b}f(x),dx \approx h \cdot \left(\frac{f(a) + f(a + h) + f(a + 2h) + ... + f(b - h) + f(b)}{2}\right)
 \]
 </p>
 <p> gdzie h = \(\frac{b-a}{n}\).</p>
-<dl class="section author"><dt>Author</dt><dd>Kacper Dolecki </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Kacper Dolecki</dd></dl>
+<p class="formulaDsp">
+\[
+\int_{a}^{b}f(x),dx \approx h \cdot \left(\frac{f(a) + f(a + h) + f(a + 2h) + ... + f(b - h) + f(b)}{2}\right)
+\]
+</p>
+<p> gdzie h = \(\frac{b-a}{n}\). </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

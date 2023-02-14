@@ -1,8 +1,4 @@
 var searchData=
 [
-  ['sequence_2ecpp_0',['sequence.cpp',['../sequence_8cpp.html',1,'']]],
-  ['sequence_2eh_1',['sequence.h',['../sequence_8h.html',1,'']]],
-  ['statistics_2ecpp_2',['statistics.cpp',['../statistics_8cpp.html',1,'']]],
-  ['statistics_2eh_3',['statistics.h',['../statistics_8h.html',1,'']]],
-  ['stronaglowna_2emd_4',['stronaglowna.md',['../stronaglowna_8md.html',1,'']]]
+  ['readme_2emd_0',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]]
 ];

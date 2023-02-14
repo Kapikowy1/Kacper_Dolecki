@@ -82,26 +82,32 @@ $(function() {
 <a href="statistics_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef STATISTICS_H</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define STATISTICS_H</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="sequence_8h.html">sequence.h</a>&quot;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_statistics.html">    6</a></span><span class="keyword">class </span><a class="code hl_class" href="class_statistics.html">Statistics</a> {</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>  <a class="code hl_function" href="class_statistics.html#a60ddd90a571ed4c3ce8c0f6317a36d63">Statistics</a>();</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>  <a class="code hl_function" href="class_statistics.html#a60ddd90a571ed4c3ce8c0f6317a36d63">Statistics</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_statistics.html">Statistics</a> &amp;);</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>  <a class="code hl_function" href="class_statistics.html#ab68ede75479e44d5c35b78ec1284065b">~Statistics</a>();</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  <span class="keywordtype">double</span> <a class="code hl_function" href="class_statistics.html#a5ec1ad32fa369eb57fa95b164d5c5377">integrate</a>(<span class="keywordtype">double</span> a, <span class="keywordtype">double</span> b, <span class="keywordtype">int</span> n, <a class="code hl_class" href="class_sequence.html">Sequence</a> &amp;seq);</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>};</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#endif  </span><span class="comment">// STATISTICS_H</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="ttc" id="aclass_sequence_html"><div class="ttname"><a href="class_sequence.html">Sequence</a></div><div class="ttdoc">Klasa reprezentująca sekwencję liczb rzeczywistych Klasa zawiera wektor wartości liczb rzeczywistych....</div></div>
-<div class="ttc" id="aclass_statistics_html"><div class="ttname"><a href="class_statistics.html">Statistics</a></div><div class="ttdoc">Klasa służąca do obliczania całki numerycznej z podanego ciągu liczb. Klasa zawiera metodę integrate(...</div><div class="ttdef"><b>Definition:</b> statistics.h:6</div></div>
-<div class="ttc" id="aclass_statistics_html_a5ec1ad32fa369eb57fa95b164d5c5377"><div class="ttname"><a href="class_statistics.html#a5ec1ad32fa369eb57fa95b164d5c5377">Statistics::integrate</a></div><div class="ttdeci">double integrate(double a, double b, int n, Sequence &amp;seq)</div><div class="ttdoc">Funkcja obliczająca całkę numeryczną. Funkcja oblicza całkę numeryczną funkcji określonej przez warto...</div><div class="ttdef"><b>Definition:</b> statistics.cpp:49</div></div>
-<div class="ttc" id="aclass_statistics_html_a60ddd90a571ed4c3ce8c0f6317a36d63"><div class="ttname"><a href="class_statistics.html#a60ddd90a571ed4c3ce8c0f6317a36d63">Statistics::Statistics</a></div><div class="ttdeci">Statistics()</div><div class="ttdoc">Konstruktor domyślny klasy Statistics. Inicjalizuje nowy obiekt klasy Statistics bez parametrów.</div><div class="ttdef"><b>Definition:</b> statistics.cpp:24</div></div>
-<div class="ttc" id="aclass_statistics_html_ab68ede75479e44d5c35b78ec1284065b"><div class="ttname"><a href="class_statistics.html#ab68ede75479e44d5c35b78ec1284065b">Statistics::~Statistics</a></div><div class="ttdeci">~Statistics()</div><div class="ttdoc">Destruktor klasy Statistics. Usuwa obiekt klasy Statistics i zwalnia zaalokowane zasoby.</div><div class="ttdef"><b>Definition:</b> statistics.cpp:37</div></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="_errorhandler_8h.html">errorhandler.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="sequence_8h.html">sequence.h</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keyword">class </span><a class="code hl_class" href="class_statistics.html">Statistics</a> {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <a class="code hl_class" href="class_statistics.html">Statistics</a>();</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <a class="code hl_class" href="class_statistics.html">Statistics</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_statistics.html">Statistics</a> &amp;);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <a class="code hl_class" href="class_statistics.html">~Statistics</a>();</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="keywordtype">double</span> Statistics::integrate(<span class="keywordtype">double</span> a, <span class="keywordtype">double</span> b, <span class="keywordtype">int</span> n, <a class="code hl_class" href="class_sequence.html">Sequence</a> &amp;seq) {</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <a class="code hl_function" href="class_error_handler.html#afbfd1dc3e5b493006b33d05f4b93656c">ErrorHandler::checkRange</a>(a, b);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <a class="code hl_function" href="class_error_handler.html#ad38a17c35b8b8437c09dc61025f717b7">ErrorHandler::checkIntervals</a>(n);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#endif  </span><span class="comment">// STATISTICS_H</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="ttc" id="a_errorhandler_8h_html"><div class="ttname"><a href="_errorhandler_8h.html">Errorhandler.h</a></div></div>
+<div class="ttc" id="aclass_error_handler_html_ad38a17c35b8b8437c09dc61025f717b7"><div class="ttname"><a href="class_error_handler.html#ad38a17c35b8b8437c09dc61025f717b7">ErrorHandler::checkIntervals</a></div><div class="ttdeci">static void checkIntervals(int n)</div><div class="ttdef"><b>Definition:</b> Errorhandler.h:19</div></div>
+<div class="ttc" id="aclass_error_handler_html_afbfd1dc3e5b493006b33d05f4b93656c"><div class="ttname"><a href="class_error_handler.html#afbfd1dc3e5b493006b33d05f4b93656c">ErrorHandler::checkRange</a></div><div class="ttdeci">static void checkRange(double a, double b)</div><div class="ttdef"><b>Definition:</b> Errorhandler.h:13</div></div>
+<div class="ttc" id="aclass_sequence_html"><div class="ttname"><a href="class_sequence.html">Sequence</a></div><div class="ttdoc">Klasa reprezentująca sekwencję liczb rzeczywistych Klasa zawiera wektor wartości liczb rzeczywistych....</div><div class="ttdef"><b>Definition:</b> sequence.h:25</div></div>
+<div class="ttc" id="aclass_statistics_html"><div class="ttname"><a href="class_statistics.html">Statistics</a></div><div class="ttdoc">Klasa do obliczania całki metodą prostokątów Klasa Statistics implementuje funkcję integrate do oblic...</div></div>
 <div class="ttc" id="asequence_8h_html"><div class="ttname"><a href="sequence_8h.html">sequence.h</a></div><div class="ttdoc">Plik nagłówkowy klasy Sequence Plik zawiera deklarację klasy Sequence, która reprezentuje sekwencję l...</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

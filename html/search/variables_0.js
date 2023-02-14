@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['values_0',['values',['../sequence_8h.html#a7b6bc2414e0cc8dd1cb020560e19ad4f',1,'sequence.h']]]
+  ['values_0',['values',['../class_sequence.html#a435699d784d5dab8d63bc317e32636de',1,'Sequence']]]
 ];

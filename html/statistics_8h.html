@@ -76,26 +76,24 @@ $(function() {
 
 </div><!-- top -->
 <div class="header">
-  <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle"><div class="title">statistics.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Plik nagłówkowy klasy <a class="el" href="class_statistics.html" title="Klasa służąca do obliczania całki numerycznej z podanego ciągu liczb. Klasa zawiera metodę integrate(...">Statistics</a>. Plik zawiera definicję klasy <a class="el" href="class_statistics.html" title="Klasa służąca do obliczania całki numerycznej z podanego ciągu liczb. Klasa zawiera metodę integrate(...">Statistics</a>, która służy do obliczania całki numerycznej z podanego ciągu liczb.  
+<p>Plik zawierający definicję klasy <a class="el" href="class_statistics.html" title="Klasa do obliczania całki metodą prostokątów Klasa Statistics implementuje funkcję integrate do oblic...">Statistics</a> do obliczania całki metodą prostokątów Plik zawiera definicję klasy <a class="el" href="class_statistics.html" title="Klasa do obliczania całki metodą prostokątów Klasa Statistics implementuje funkcję integrate do oblic...">Statistics</a>, która implementuje funkcję integrate do obliczania całki funkcji za pomocą metody prostokątów.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="sequence_8h_source.html">sequence.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="_errorhandler_8h_source.html">errorhandler.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sequence_8h_source.html">sequence.h</a>&quot;</code><br />
 </div>
 <p><a href="statistics_8h_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_statistics.html">Statistics</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Klasa służąca do obliczania całki numerycznej z podanego ciągu liczb. Klasa zawiera metodę <a class="el" href="class_statistics.html#a5ec1ad32fa369eb57fa95b164d5c5377" title="Funkcja obliczająca całkę numeryczną. Funkcja oblicza całkę numeryczną funkcji określonej przez warto...">integrate()</a>, która jest odpowiedzialna za obliczenie całki numerycznej.  <a href="class_statistics.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Plik nagłówkowy klasy <a class="el" href="class_statistics.html" title="Klasa służąca do obliczania całki numerycznej z podanego ciągu liczb. Klasa zawiera metodę integrate(...">Statistics</a>. Plik zawiera definicję klasy <a class="el" href="class_statistics.html" title="Klasa służąca do obliczania całki numerycznej z podanego ciągu liczb. Klasa zawiera metodę integrate(...">Statistics</a>, która służy do obliczania całki numerycznej z podanego ciągu liczb. </p>
+<div class="textblock"><p>Plik zawierający definicję klasy <a class="el" href="class_statistics.html" title="Klasa do obliczania całki metodą prostokątów Klasa Statistics implementuje funkcję integrate do oblic...">Statistics</a> do obliczania całki metodą prostokątów Plik zawiera definicję klasy <a class="el" href="class_statistics.html" title="Klasa do obliczania całki metodą prostokątów Klasa Statistics implementuje funkcję integrate do oblic...">Statistics</a>, która implementuje funkcję integrate do obliczania całki funkcji za pomocą metody prostokątów. </p>
+<p>Obliczanie całki funkcji f(x) w przedziale [a,b] przy użyciu metody prostokątów. Wzór użyty do obliczania całki wygląda następująco:  </p><p class="formulaDsp">
+\[
+\int_{a}^{b}f(x),dx \approx h \cdot \left(\frac{f(a) + f(a + h) + f(a + 2h) + ... + f(b - h) + f(b)}{2}\right)
+\]
+</p>
+<p> gdzie h = \(\frac{b-a}{n}\).</p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

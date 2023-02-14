@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['kacper_5fdolecki_0',['Kacper_Dolecki',['../md__r_e_a_d_m_e.html',1,'']]]
+  ['errorhandler_0',['ErrorHandler',['../class_error_handler.html',1,'']]],
+  ['errorhandler_2eh_1',['Errorhandler.h',['../_errorhandler_8h.html',1,'']]]
 ];
