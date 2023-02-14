@@ -1,6 +1,7 @@
 #ifndef STATISTICS_H
 #define STATISTICS_H
 
+#include "errorhandler.h"
 #include "sequence.h"
 
 class Statistics {
@@ -9,8 +10,10 @@ class Statistics {
   Statistics(const Statistics &);
   ~Statistics();
 
-  double integrate(double a, double b, int n, Sequence &seq);
-};
+  double Statistics::integrate(double a, double b, int n, Sequence &seq) {
+  ErrorHandler::checkRange(a, b);
+  ErrorHandler::checkIntervals(n);
+  }
 
 #endif  // STATISTICS_H
 
