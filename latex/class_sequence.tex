@@ -2,20 +2,116 @@
 \label{class_sequence}\index{Sequence@{Sequence}}
 
 
-Klasa reprezentująca sekwencję liczb rzeczywistych Klasa zawiera wektor wartości liczb rzeczywistych. Zawiera konstruktor domyślny, konstruktor kopiujący i destruktor. Zawiera także funkcję \mbox{\hyperlink{sequence_8h_ac425cf9ddbed554b3ed285a9b7cddd14}{set\+Values()}}, która ustawia wartości wektora wartości. / class \mbox{\hyperlink{class_sequence}{Sequence}} \{ public\+: /$\ast$.  
+Klasa reprezentująca sekwencję liczb rzeczywistych Klasa zawiera wektor wartości liczb rzeczywistych. Zawiera konstruktor domyślny, konstruktor kopiujący i destruktor. Zawiera także funkcję \mbox{\hyperlink{class_sequence_ac425cf9ddbed554b3ed285a9b7cddd14}{set\+Values()}}, która ustawia wartości wektora wartości. /$\ast$.  
 
 
 
 
 {\ttfamily \#include $<$sequence.\+h$>$}
 
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sequence_a532b7e8df6ff6b2f990c14ae97859ca2}{Sequence}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyślny. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sequence_af20b0a9784c4356e02f11b1c6e42a00d}{Sequence}} (const \mbox{\hyperlink{class_sequence}{Sequence}} \&seq)
+\begin{DoxyCompactList}\small\item\em Konstruktor kopiujący Tworzy kopię obiektu klasy \mbox{\hyperlink{class_sequence}{Sequence}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sequence_aee09a7d70c3ab523fed85da94ea1366f}{$\sim$\+Sequence}} ()
+\begin{DoxyCompactList}\small\item\em Destruktor Zwalnia pamięć zarezerwowaną przez obiekt klasy \mbox{\hyperlink{class_sequence}{Sequence}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sequence_ac425cf9ddbed554b3ed285a9b7cddd14}{set\+Values}} (const std\+::vector$<$ double $>$ \&vals)
+\begin{DoxyCompactList}\small\item\em Funkcja ustawiająca wartości wektora wartości Funkcja ustawia wartości wektora wartości na podaną sekwencję liczb rzeczywistych. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{class_sequence_a435699d784d5dab8d63bc317e32636de}{values}}
+\begin{DoxyCompactList}\small\item\em Wektor wartości liczb rzeczywistych. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-Klasa reprezentująca sekwencję liczb rzeczywistych Klasa zawiera wektor wartości liczb rzeczywistych. Zawiera konstruktor domyślny, konstruktor kopiujący i destruktor. Zawiera także funkcję \mbox{\hyperlink{sequence_8h_ac425cf9ddbed554b3ed285a9b7cddd14}{set\+Values()}}, która ustawia wartości wektora wartości. / class \mbox{\hyperlink{class_sequence}{Sequence}} \{ public\+: /$\ast$. 
+Klasa reprezentująca sekwencję liczb rzeczywistych Klasa zawiera wektor wartości liczb rzeczywistych. Zawiera konstruktor domyślny, konstruktor kopiujący i destruktor. Zawiera także funkcję \mbox{\hyperlink{class_sequence_ac425cf9ddbed554b3ed285a9b7cddd14}{set\+Values()}}, która ustawia wartości wektora wartości. /$\ast$. 
+
+/$\ast$
 
 Konstruktor domyślny Tworzy obiekt klasy \mbox{\hyperlink{class_sequence}{Sequence}} bez wartości wektora wartości. 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sequence_a532b7e8df6ff6b2f990c14ae97859ca2}\label{class_sequence_a532b7e8df6ff6b2f990c14ae97859ca2}} 
+\index{Sequence@{Sequence}!Sequence@{Sequence}}
+\index{Sequence@{Sequence}!Sequence@{Sequence}}
+\doxysubsubsection{\texorpdfstring{Sequence()}{Sequence()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Sequence\+::\+Sequence (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Konstruktor domyślny. 
+
+\mbox{\Hypertarget{class_sequence_af20b0a9784c4356e02f11b1c6e42a00d}\label{class_sequence_af20b0a9784c4356e02f11b1c6e42a00d}} 
+\index{Sequence@{Sequence}!Sequence@{Sequence}}
+\index{Sequence@{Sequence}!Sequence@{Sequence}}
+\doxysubsubsection{\texorpdfstring{Sequence()}{Sequence()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Sequence\+::\+Sequence (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_sequence}{Sequence}} \&}]{seq }\end{DoxyParamCaption})}
+
+
+
+Konstruktor kopiujący Tworzy kopię obiektu klasy \mbox{\hyperlink{class_sequence}{Sequence}}. 
+
+Konstruktor kopiujący.
+
+
+\begin{DoxyParams}{Parameters}
+{\em seq} & -\/ obiekt klasy \mbox{\hyperlink{class_sequence}{Sequence}}, który jest kopiowany\\
+\hline
+{\em seq} & Obiekt kopiowany \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sequence_aee09a7d70c3ab523fed85da94ea1366f}\label{class_sequence_aee09a7d70c3ab523fed85da94ea1366f}} 
+\index{Sequence@{Sequence}!````~Sequence@{$\sim$Sequence}}
+\index{````~Sequence@{$\sim$Sequence}!Sequence@{Sequence}}
+\doxysubsubsection{\texorpdfstring{$\sim$Sequence()}{~Sequence()}}
+{\footnotesize\ttfamily Sequence\+::$\sim$\+Sequence (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor Zwalnia pamięć zarezerwowaną przez obiekt klasy \mbox{\hyperlink{class_sequence}{Sequence}}. 
+
+Destruktor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sequence_ac425cf9ddbed554b3ed285a9b7cddd14}\label{class_sequence_ac425cf9ddbed554b3ed285a9b7cddd14}} 
+\index{Sequence@{Sequence}!setValues@{setValues}}
+\index{setValues@{setValues}!Sequence@{Sequence}}
+\doxysubsubsection{\texorpdfstring{setValues()}{setValues()}}
+{\footnotesize\ttfamily void Sequence\+::set\+Values (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ \&}]{v }\end{DoxyParamCaption})}
+
+
+
+Funkcja ustawiająca wartości wektora wartości Funkcja ustawia wartości wektora wartości na podaną sekwencję liczb rzeczywistych. 
+
+Funkcja ustawiająca wartości wektora values.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vals} & -\/ sekwencja liczb rzeczywistych, która jest ustawiana jako wartości wektora wartości\\
+\hline
+{\em v} & Wektor wartości do ustawienia \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_sequence_a435699d784d5dab8d63bc317e32636de}\label{class_sequence_a435699d784d5dab8d63bc317e32636de}} 
+\index{Sequence@{Sequence}!values@{values}}
+\index{values@{values}!Sequence@{Sequence}}
+\doxysubsubsection{\texorpdfstring{values}{values}}
+{\footnotesize\ttfamily Sequence\+::values}
+
+
+
+Wektor wartości liczb rzeczywistych. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{sequence_8h}{sequence.\+h}}\end{DoxyCompactItemize}
+\mbox{\hyperlink{sequence_8h}{sequence.\+h}}\item 
+\mbox{\hyperlink{sequence_8cpp}{sequence.\+cpp}}\end{DoxyCompactItemize}

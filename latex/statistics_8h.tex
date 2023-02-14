@@ -2,17 +2,16 @@
 \label{statistics_8h}\index{statistics.h@{statistics.h}}
 
 
-Plik nagłówkowy klasy \mbox{\hyperlink{class_statistics}{Statistics}}. Plik zawiera definicję klasy \mbox{\hyperlink{class_statistics}{Statistics}}, która służy do obliczania całki numerycznej z podanego ciągu liczb.  
+Plik zawierający definicję klasy \mbox{\hyperlink{class_statistics}{Statistics}} do obliczania całki metodą prostokątów Plik zawiera definicję klasy \mbox{\hyperlink{class_statistics}{Statistics}}, która implementuje funkcję integrate do obliczania całki funkcji za pomocą metody prostokątów.  
 
 
+{\ttfamily \#include \char`\"{}errorhandler.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}sequence.\+h\char`\"{}}\newline
-\doxysubsection*{Classes}
-\begin{DoxyCompactItemize}
-\item 
-class \mbox{\hyperlink{class_statistics}{Statistics}}
-\begin{DoxyCompactList}\small\item\em Klasa służąca do obliczania całki numerycznej z podanego ciągu liczb. Klasa zawiera metodę \mbox{\hyperlink{class_statistics_a5ec1ad32fa369eb57fa95b164d5c5377}{integrate()}}, która jest odpowiedzialna za obliczenie całki numerycznej. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-Plik nagłówkowy klasy \mbox{\hyperlink{class_statistics}{Statistics}}. Plik zawiera definicję klasy \mbox{\hyperlink{class_statistics}{Statistics}}, która służy do obliczania całki numerycznej z podanego ciągu liczb. 
+Plik zawierający definicję klasy \mbox{\hyperlink{class_statistics}{Statistics}} do obliczania całki metodą prostokątów Plik zawiera definicję klasy \mbox{\hyperlink{class_statistics}{Statistics}}, która implementuje funkcję integrate do obliczania całki funkcji za pomocą metody prostokątów. 
 
+Obliczanie całki funkcji f(x) w przedziale \mbox{[}a,b\mbox{]} przy użyciu metody prostokątów. Wzór użyty do obliczania całki wygląda następująco\+:  \[
+\int_{a}^{b}f(x),dx \approx h \cdot \left(\frac{f(a) + f(a + h) + f(a + 2h) + ... + f(b - h) + f(b)}{2}\right)
+\] gdzie h = $\frac{b-a}{n}$.
